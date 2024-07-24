@@ -77,8 +77,7 @@ class Author:
             {
                 article.magazine.category
                 for article in Article.all
-                if article.author is self
-            }
+                if article.author is self}
         )
         if len(topics) == 0:
             return None
